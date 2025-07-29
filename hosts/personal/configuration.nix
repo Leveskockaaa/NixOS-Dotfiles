@@ -106,9 +106,10 @@
   	nano
   	neovim
   	vscodium
-	btop
-	discord
-	git
+	  btop
+	  discord
+	  git
+    spotify
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -122,7 +123,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
