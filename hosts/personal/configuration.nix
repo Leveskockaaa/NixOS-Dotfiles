@@ -6,7 +6,7 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
     ];
     
@@ -110,7 +110,12 @@
 	  discord
 	  git
     spotify
+    home-manager
+    tree
+    fastfetch
   ];
+
+  programs.steam.enable = false;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
