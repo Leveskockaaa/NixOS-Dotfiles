@@ -1,6 +1,8 @@
 { config, pkgs, lib, ...}:
 
-let settings = import ./settings.nix;
+let
+  homeDirectory = builtins.getEnv "HOME";
+  settings = import (homeDirectory + "/.config/nixos-private/git-settings.nix");
 
 in
 {
