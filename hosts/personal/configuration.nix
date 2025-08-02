@@ -86,12 +86,7 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.leveskocka = {
-    isNormalUser = true;
-    description = "leveskocka";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
-    packages = with pkgs; [];
-  };
+
 
   # Install firefox.
   programs.firefox.enable = true;

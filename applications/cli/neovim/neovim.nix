@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with [ neovim ];
+  home.packages = with pkgs; [ neovim ];
 }
