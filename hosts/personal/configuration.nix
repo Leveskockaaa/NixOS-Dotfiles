@@ -104,7 +104,6 @@
   environment.systemPackages = with pkgs; [
   	wget
   	nano
-  	neovim
   	vscodium
 	  btop
 	  discord
