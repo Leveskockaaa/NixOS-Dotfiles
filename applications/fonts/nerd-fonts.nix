@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ nerd-fonts ];
+  home.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 }

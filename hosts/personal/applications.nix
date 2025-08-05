@@ -13,8 +13,12 @@
     ../../applications/gui/steam.nix
     ../../applications/gui/vscodium/vscodium.nix
 
+    # programming languages
+    ../../applications/languages/java.nix
+    ../../applications/languages/go.nix
+    ../../applications/languages/python.nix
+
     # fonts
-    ../../fonts/jetbrains.nix
-    ../../fonts/nerd-fonts.nix
+    ../../applications/fonts/nerd-fonts.nix
   ];
 }

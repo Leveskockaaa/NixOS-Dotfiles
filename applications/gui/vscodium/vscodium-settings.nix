@@ -14,7 +14,7 @@
     "workbench.iconTheme" = "Catppuccin Icons";
 
     "editor.mouseWheelZoom" = true;
-    "editor.fontFamily" = "'JetBrains Mono', monospace";
+    "editor.fontFamily" = "'JetBrainsMono Nerd Font', monospace";
     "editor.fontLigatures" = false;
   };
 }
