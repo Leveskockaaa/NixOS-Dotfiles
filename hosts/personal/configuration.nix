@@ -64,9 +64,6 @@
   # Configure console keymap
   console.keyMap = "hu";
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -100,7 +97,6 @@
   environment.systemPackages = with pkgs; [
   	wget
   	nano
-  	vscodium
 	  btop
 	  discord
 	  git
@@ -112,6 +108,9 @@
 
   programs.steam.enable = false;
   programs.fish.enable = true;
+
+  services.printing.enable = true;
+  services.printing.drivers = [ pkgs.gutenprint pkgs.hplip pkgs.cups ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

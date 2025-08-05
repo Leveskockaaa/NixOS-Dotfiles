@@ -9,5 +9,6 @@
     ../../applications/cli/neovim/neovim.nix
 
     ../../applications/gui/steam.nix
+    ../../applications/gui/vscodium/vscodium.nix
   ];
 }
