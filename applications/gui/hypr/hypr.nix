@@ -6,5 +6,5 @@
     hyprpaper
     hyprlock
     hypridle
-  ]
+  ];
 }

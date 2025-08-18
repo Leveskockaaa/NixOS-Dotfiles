@@ -34,6 +34,19 @@
           ];
         };
 
+        hyprland = nixpkgs.lib.nixosSystem {
+          inherit system;
+          modules = [
+            ./hosts/personal/configuration.nix
+
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useUserPackages = true;
+              home-manager.users.leveskocka = import ./hosts/hyprland/home.nix;
+            }
+          ];
+        };
+
         # server = nixpkgs.lib.nixosSystem {
         #   inherit system;
         #   modules = [

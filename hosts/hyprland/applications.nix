@@ -14,6 +14,10 @@
     ../../applications/gui/steam.nix
     ../../applications/gui/vscodium/vscodium.nix
 
+    # desktop enviroment
+    ../../applications/gui/hypr/hypr.nix
+    ../../applications/gui/quickshell/quickshell.nix
+
     # programming languages
     ../../applications/languages/java.nix
     ../../applications/languages/go.nix

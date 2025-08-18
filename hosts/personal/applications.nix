@@ -13,6 +13,7 @@
     # gui applications
     ../../applications/gui/steam.nix
     ../../applications/gui/vscodium/vscodium.nix
+    ../../applications/gui/obsidian/obsidian.nix
 
     # programming languages
     ../../applications/languages/java.nix
