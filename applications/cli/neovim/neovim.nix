@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ neovim ];
+  options = {
+    neovim.enable = lib.mkEnableOption "enables neovim";
+  };
+
+  config = lib.mkIf config.neovim.enable {
+    home.packages = with pkgs; [ neovim ];
+  };
 }

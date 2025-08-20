@@ -23,4 +23,6 @@
     # fonts
     ../../applications/fonts/nerd-fonts.nix
   ];
+
+  neovim.enable = true;
 }
