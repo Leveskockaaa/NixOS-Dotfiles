@@ -1,6 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ starship ];
-  imports = [ ./starship-settings.nix ];
+  options = {
+    starship.enable = lib.mkEnableOption "enables starship";
+  };
+
+  config = lib.mkIf config.starship.enable {
+    home.packages = with pkgs; [ starship ];
+  };
 }

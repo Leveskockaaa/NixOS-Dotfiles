@@ -1,8 +1,14 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-	go
-	delve
-  ];
+  options = {
+    golang.enable = lib.mkEnableOption "enables golang";
+  };
+
+  config = lib.mkIf config.golang.enable {
+    home.packages = with pkgs; [
+      go
+      delve
+    ];
+  };
 }

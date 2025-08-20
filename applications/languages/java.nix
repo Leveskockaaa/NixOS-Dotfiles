@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ jdk23 ];
+  options = {
+    java.enable = lib.mkEnableOption "enables java";
+  };
+
+  config = lib.mkIf config.java.enable {
+    home.packages = with pkgs; [ jdk23 ];
+  };
 }

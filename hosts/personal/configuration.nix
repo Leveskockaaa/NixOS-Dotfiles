@@ -95,19 +95,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  	wget
-  	nano
-	  btop
-	  discord
-	  git
-    spotify
     home-manager
-    tree
-    fastfetch
   ];
-
-  programs.steam.enable = false;
-  programs.fish.enable = true;
 
   services.printing.enable = true;
   services.printing.drivers = [ pkgs.gutenprint pkgs.hplip pkgs.cups ];

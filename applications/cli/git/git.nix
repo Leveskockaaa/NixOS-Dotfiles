@@ -1,14 +1,11 @@
-{ config, pkgs, lib, ...}:
+{ config, lib, pkgs, ... }:
 
-let
-
-in
 {
-  home.packages = with pkgs; [ git ];
+  options = {
+    git.enable = lib.mkEnableOption "enables git";
+  };
 
-  # programs.git = {
-  #   enable = true;
-  #   userName = settings.name;
-  #   userEmail = settings.email;
-  # };
+  config = lib.mkIf config.git.enable {
+    home.packages = with pkgs; [ git ];
+  };
 }

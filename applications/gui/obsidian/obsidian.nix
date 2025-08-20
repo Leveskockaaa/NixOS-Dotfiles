@@ -1,12 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  imports = [
-    ./obsidian-settings.nix
-  ];
+  options = {
+    obsidian.enable = lib.mkEnableOption "enables obsidian";
+  };
 
-  programs.obsidian = {
-    enable = true;
-    package = pkgs.obsidian;
+  config = lib.mkIf config.obsidian.enable {
+    home.packages = with pkgs; [ obsidian ];
   };
 }

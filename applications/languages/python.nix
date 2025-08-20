@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ python314 ];
+  options = {
+    python.enable = lib.mkEnableOption "enables python";
+  };
+
+  config = lib.mkIf config.python.enable {
+    home.packages = with pkgs; [ python314 ];
+  };
 }

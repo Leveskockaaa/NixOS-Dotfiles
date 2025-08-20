@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ ghostty ];
+  options = {
+    ghostty.enable = lib.mkEnableOption "enables ghostty";
+  };
+
+  config = lib.mkIf config.ghostty.enable {
+    home.packages = with pkgs; [ ghostty ];
+  };
 }

@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ kitty ];
+  options = {
+    kitty.enable = lib.mkEnableOption "enables kitty";
+  };
+
+  config = lib.mkIf config.kitty.enable {
+    home.packages = with pkgs; [ kitty ];
+  };
 }
