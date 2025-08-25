@@ -7,6 +7,6 @@
 
   config = lib.mkIf config.qbittorrent.enable {
     home.packages = with pkgs; [ qbittorrent ];
-    programs.qbittorrent.enable = true;
+    # programs.qbittorrent.enable = true;
   };
 }

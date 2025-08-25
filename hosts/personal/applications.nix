@@ -20,6 +20,7 @@
     ../../applications/gui/discord/discord.nix
     ../../applications/gui/hypr/hypr.nix
     ../../applications/gui/obsidian/obsidian.nix
+    ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
     ../../applications/gui/spotify/spotify.nix
     ../../applications/gui/steam/steam.nix
@@ -52,6 +53,7 @@
   discord.enable = true;
   hypr.enable = false;
   obsidian.enable = true;
+  qbittorrent.enable = true;
   quickshell.enable = false;
   spotify.enable = true;
   steam.enable = true;
