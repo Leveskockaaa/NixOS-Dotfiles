@@ -8,5 +8,8 @@
   config = lib.mkIf config.git.enable {
     home.packages = with pkgs; [ git ];
     programs.git.enable = true;
+
+    programs.git.userName  = "Leveskockaaa";
+    programs.git.userEmail = "gamekapocshu@gmail.com";
   };
 }
