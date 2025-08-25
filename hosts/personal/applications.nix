@@ -22,6 +22,7 @@
     ../../applications/gui/obsidian/obsidian.nix
     ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
+    ../../applications/gui/sayonara/sayonara.nix
     ../../applications/gui/spotify/spotify.nix
     ../../applications/gui/steam/steam.nix
     ../../applications/gui/vscodium/vscodium.nix
@@ -56,6 +57,7 @@
   obsidian.enable = true;
   qbittorrent.enable = true;
   quickshell.enable = false;
+  sayonara.enable = true;
   spotify.enable = true;
   steam.enable = true;
 
