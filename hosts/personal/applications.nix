@@ -42,6 +42,7 @@
   ghostty.enable = true;
   git.enable = true;
   kitty.enable = true;
+  music-player.enable = true;
   nano.enable = true;
   neovim.enable = true;
   nodejs.enable = true;
