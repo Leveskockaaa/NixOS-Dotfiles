@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.nano.enable {
     home.packages = with pkgs; [ nano ];
+    # programs.nano.enable = true;
   };
 }

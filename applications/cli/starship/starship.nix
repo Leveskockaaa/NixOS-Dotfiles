@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.starship.enable {
     home.packages = with pkgs; [ starship ];
+    programs.starship.enable = true;
   };
 }

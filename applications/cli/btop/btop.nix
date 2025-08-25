@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.btop.enable {
     home.packages = with pkgs; [ btop ];
+    programs.btop.enable = true;
   };
 }

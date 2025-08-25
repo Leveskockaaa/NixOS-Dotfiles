@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.quickshell.enable {
     home.packages = with pkgs; [ quickshell ];
+    programs.quickshell.enable = true;
   };
 }

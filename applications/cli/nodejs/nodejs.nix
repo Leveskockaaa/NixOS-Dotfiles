@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.nodejs.enable {
     home.packages = with pkgs; [ nodejs ];
+    # programs.nodejs.enable = true;
   };
 }

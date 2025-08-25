@@ -9,4 +9,6 @@
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
     packages = with pkgs; [];
   };
+
+  programs.fish.enable = true;
 }

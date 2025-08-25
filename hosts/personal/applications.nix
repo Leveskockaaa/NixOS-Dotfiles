@@ -22,7 +22,7 @@
     ../../applications/gui/obsidian/obsidian.nix
     ../../applications/gui/quickshell/quickshell.nix
     ../../applications/gui/spotify/spotify.nix
-    ../../applications/gui/steam.nix
+    ../../applications/gui/steam/steam.nix
     ../../applications/gui/vscodium/vscodium.nix
 
     # programming languages

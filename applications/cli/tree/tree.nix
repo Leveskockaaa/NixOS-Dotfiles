@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.tree.enable {
     home.packages = with pkgs; [ tree ];
+    # programs.tree.enable = true;
   };
 }

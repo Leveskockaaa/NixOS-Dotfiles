@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.spotify.enable {
     home.packages = with pkgs; [ spotify ];
+    # programs.spotify.enable = true;
   };
 }

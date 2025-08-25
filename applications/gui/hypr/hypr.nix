@@ -12,5 +12,9 @@
       hyprlock
       hypridle
     ];
+    # programs.hyprland.enable = true;
+    # programs.hyprpaper.enable = true;
+    # programs.hyprlock.enable = true;
+    # programs.hypridle.enable = true;
   };
 }

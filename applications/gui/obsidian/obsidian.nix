@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.obsidian.enable {
     home.packages = with pkgs; [ obsidian ];
+    programs.obsidian.enable = true;
   };
 }

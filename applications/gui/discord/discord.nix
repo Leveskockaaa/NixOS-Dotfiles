@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.discord.enable {
     home.packages = with pkgs; [ discord ];
+    # programs.discord.enable = true;
   };
 }

@@ -10,5 +10,7 @@
       go
       delve
     ];
+    programs.go.enable = true;
+    # programs.delve.enable = true;
   };
 }

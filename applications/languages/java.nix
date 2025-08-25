@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.java.enable {
     home.packages = with pkgs; [ jdk23 ];
+    # programs.jdk23.enable = true;
   };
 }

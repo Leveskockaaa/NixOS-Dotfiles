@@ -7,5 +7,6 @@
 
   config = lib.mkIf config.steam.enable {
     home.packages = with pkgs; [ steam ];
+    # programs.steam.enable = true;
   };
 }
