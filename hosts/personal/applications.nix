@@ -18,12 +18,14 @@
 
     # gui applications
     ../../applications/gui/discord/discord.nix
+    ../../applications/gui/easytag/easytag.nix
     ../../applications/gui/hypr/hypr.nix
     ../../applications/gui/obsidian/obsidian.nix
     ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
     ../../applications/gui/spotify/spotify.nix
     ../../applications/gui/steam/steam.nix
+    ../../applications/gui/vlc/vlc.nix
     ../../applications/gui/vscodium/vscodium.nix
 
     # programming languages
@@ -51,12 +53,14 @@
 
   # States of gui packages
   discord.enable = true;
+  easytag.enable = true;
   hypr.enable = false;
   obsidian.enable = true;
   qbittorrent.enable = true;
   quickshell.enable = false;
   spotify.enable = true;
   steam.enable = true;
+  vlc.enable = true;
 
   # States of language packages
   golang.enable = true;
