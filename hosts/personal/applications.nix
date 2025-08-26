@@ -22,7 +22,6 @@
     ../../applications/gui/obsidian/obsidian.nix
     ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
-    ../../applications/gui/sayonara/sayonara.nix
     ../../applications/gui/spotify/spotify.nix
     ../../applications/gui/steam/steam.nix
     ../../applications/gui/vscodium/vscodium.nix
@@ -43,7 +42,6 @@
   ghostty.enable = true;
   git.enable = true;
   kitty.enable = true;
-  music-player.enable = true;
   nano.enable = true;
   neovim.enable = true;
   nodejs.enable = true;
@@ -57,7 +55,6 @@
   obsidian.enable = true;
   qbittorrent.enable = true;
   quickshell.enable = false;
-  sayonara.enable = true;
   spotify.enable = true;
   steam.enable = true;
 
