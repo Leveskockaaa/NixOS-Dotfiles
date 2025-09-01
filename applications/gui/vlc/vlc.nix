@@ -7,6 +7,6 @@
 
   config = lib.mkIf config.vlc.enable {
     home.packages = with pkgs; [ vlc ];
-    programs.vlc.enable = true;
+    # programs.vlc.enable = true;
   };
 }
