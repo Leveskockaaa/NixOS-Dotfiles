@@ -6,8 +6,7 @@
   };
 
   config = lib.mkIf config.plex.enable {
-    programs.plex.enable = true;
-    services.plex = {
+    programs.plex = {
       enable = true;
       openFirewall = true;
     };
