@@ -9,6 +9,7 @@
     [
       ./hardware-configuration.nix
       ./users.nix
+      ./services.nix
     ];
     
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

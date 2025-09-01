@@ -2,11 +2,11 @@
 
 {
   options = {
-    plex.enable = lib.mkEnableOption "enables plex";
+    plex.enable = lib.mkEnableOption "Enable Plex Media Server";
   };
 
   config = lib.mkIf config.plex.enable {
-    programs.plex = {
+    services.plex = {
       enable = true;
       openFirewall = true;
     };

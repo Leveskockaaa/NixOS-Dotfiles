@@ -21,7 +21,6 @@
     ../../applications/gui/easytag/easytag.nix
     ../../applications/gui/hypr/hypr.nix
     ../../applications/gui/obsidian/obsidian.nix
-    ../../applications/gui/plex/plex.nix
     ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
     ../../applications/gui/spotify/spotify.nix
@@ -36,6 +35,9 @@
 
     # fonts
     ../../applications/fonts/nerd-fonts.nix
+
+    # services
+    ../../applications/services/plex/plex.nix
   ];
 
   # States of cli packages
@@ -57,7 +59,6 @@
   easytag.enable = true;
   hypr.enable = false;
   obsidian.enable = true;
-  plex.enable = true;
   qbittorrent.enable = true;
   quickshell.enable = false;
   spotify.enable = true;
@@ -68,4 +69,7 @@
   golang.enable = true;
   java.enable = true;
   python.enable = true;
+
+  # States of services
+  plex.enable = true;
 }
