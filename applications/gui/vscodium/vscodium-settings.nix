@@ -7,6 +7,7 @@
 
     golang.go
     redhat.java
+    vscjava.vscode-java-pack
   ];
 
   programs.vscode.userSettings = {

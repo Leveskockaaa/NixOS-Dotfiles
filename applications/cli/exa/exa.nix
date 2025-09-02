@@ -6,7 +6,6 @@
   };
 
   config = lib.mkIf config.exa.enable {
-    # home.packages = with pkgs; [ exa ];
     programs.exa.enable = true;
   };
 }

@@ -18,6 +18,7 @@
     ../../applications/cli/wget/wget.nix
 
     # gui applications
+    ../../applications/gui/anki/anki.nix
     ../../applications/gui/discord/discord.nix
     ../../applications/gui/easytag/easytag.nix
     ../../applications/gui/hypr/hypr.nix
@@ -54,6 +55,7 @@
   wget.enable = true;
 
   # States of gui packages
+  anki.enable = true;
   discord.enable = true;
   easytag.enable = true;
   hypr.enable = false;
