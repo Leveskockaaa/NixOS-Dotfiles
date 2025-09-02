@@ -7,7 +7,6 @@
     description = "leveskocka";
     shell = pkgs.fish;
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
-    packages = with pkgs; [];
   };
 
   programs.fish.enable = true;
