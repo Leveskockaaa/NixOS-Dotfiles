@@ -4,6 +4,7 @@
   imports = [
     # cli applications
     ../../applications/cli/btop/btop.nix
+    ../../applications/cli/exa/exa.nix
     ../../applications/cli/fastfetch/fastfetch.nix
     ../../applications/cli/fish/fish.nix
     ../../applications/cli/ghostty/ghostty.nix
@@ -35,13 +36,11 @@
 
     # fonts
     ../../applications/fonts/nerd-fonts.nix
-
-    # services
-    ../../applications/services/plex/plex.nix
   ];
 
   # States of cli packages
   btop.enable = true;
+  exa.enable = true;
   fastfetch.enable = true;
   fish.enable = true;
   ghostty.enable = true;
@@ -69,7 +68,4 @@
   golang.enable = true;
   java.enable = true;
   python.enable = true;
-
-  # States of services
-  plex.enable = true;
 }
