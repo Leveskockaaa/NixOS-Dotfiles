@@ -9,5 +9,11 @@
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
   };
 
-  programs.fish.enable = true;
+  programs.fish = {
+    enable = true;
+
+    shellAliases = {
+      exa = "exa --long --header";
+    };
+  };
 }
