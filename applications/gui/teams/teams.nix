@@ -6,6 +6,6 @@
   };
 
   config = lib.mkIf config.teams.enable {
-    programs.teams.enable = true;
+    home.packages = with pkgs; [ teams-for-linux ];
   };
 }
