@@ -17,7 +17,7 @@
 
     # gui applications
     ../../applications/gui/discord/discord.nix
-    ../../applications/gui/hypr/hypr.nix
+    ../../applications/gui/firefox/firefox.nix
     ../../applications/gui/obsidian/obsidian.nix
     ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
@@ -50,7 +50,7 @@
 
   # States of gui packages
   discord.enable = true;
-  hypr.enable = false;
+  firefox.enable = true;
   obsidian.enable = true;
   qbittorrent.enable = true;
   quickshell.enable = true;

@@ -21,7 +21,7 @@
     ../../applications/gui/anki/anki.nix
     ../../applications/gui/discord/discord.nix
     ../../applications/gui/easytag/easytag.nix
-    ../../applications/gui/hypr/hypr.nix
+    ../../applications/gui/firefox/firefox.nix
     ../../applications/gui/obsidian/obsidian.nix
     ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
@@ -59,7 +59,7 @@
   anki.enable = true;
   discord.enable = true;
   easytag.enable = true;
-  hypr.enable = false;
+  firefox.enable = true;
   obsidian.enable = true;
   qbittorrent.enable = true;
   quickshell.enable = false;

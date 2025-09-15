@@ -6,7 +6,11 @@
     initialPassword = "nixer";
     description = "leveskocka";
     shell = pkgs.fish;
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "video"
+      "audio" ];
   };
 
   programs.fish = {
