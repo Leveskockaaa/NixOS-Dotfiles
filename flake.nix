@@ -10,10 +10,12 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs =
-    { self, nixpkgs, home-manager, ... }:
+    { self, nixpkgs, home-manager, hyprland, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -37,22 +39,21 @@
         hyprland = nixpkgs.lib.nixosSystem {
           inherit system;
           modules = [
-            ./hosts/personal/configuration.nix
+            ./hosts/hyprland/configuration.nix
 
             home-manager.nixosModules.home-manager
             {
               home-manager.useUserPackages = true;
               home-manager.users.leveskocka = import ./hosts/hyprland/home.nix;
+
+              programs.hyprland = {
+                enable = true;
+                package = hyprland.packages.${system}.hyprland;
+                portalPackage = hyprland.packages.${system}.xdg-desktop-portal-hyprland;
+              };
             }
           ];
         };
-
-        # server = nixpkgs.lib.nixosSystem {
-        #   inherit system;
-        #   modules = [
-        #     ./hosts/server/configuration.nix
-        #   ];
-        # };
       };
 
       homeConfigurations."leveskocka" = home-manager.lib.homeManagerConfiguration {

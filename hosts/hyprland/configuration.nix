@@ -51,8 +51,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = false;
 
-  programs.hyprland.enable = true;
-
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = false;
   services.xserver.desktopManager.gnome.enable = false;
@@ -97,21 +95,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  	wget
-  	nano
-	  btop
-	  discord
-    spotify
-    home-manager
-    tree
-    fastfetch
+
   ];
 
-  programs.steam.enable = false;
   programs.fish.enable = true;
-
-  services.printing.enable = true;
-  services.printing.drivers = [ pkgs.gutenprint pkgs.hplip pkgs.cups ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

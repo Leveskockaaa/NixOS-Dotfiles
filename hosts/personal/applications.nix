@@ -22,7 +22,6 @@
     ../../applications/gui/discord/discord.nix
     ../../applications/gui/easytag/easytag.nix
     ../../applications/gui/hypr/hypr.nix
-    ../../applications/gui/lmms/lmms.nix
     ../../applications/gui/obsidian/obsidian.nix
     ../../applications/gui/qbittorrent/qbittorrent.nix
     ../../applications/gui/quickshell/quickshell.nix
@@ -61,7 +60,6 @@
   discord.enable = true;
   easytag.enable = true;
   hypr.enable = false;
-  lmms.enable = true;
   obsidian.enable = true;
   qbittorrent.enable = true;
   quickshell.enable = false;
