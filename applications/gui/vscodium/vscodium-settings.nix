@@ -22,5 +22,7 @@
     "editor.mouseWheelZoom" = true;
     "editor.fontFamily" = "'JetBrainsMono Nerd Font', monospace";
     "editor.fontLigatures" = false;
+
+    "redhat.telemetry.enabled" = false;
   };
 }

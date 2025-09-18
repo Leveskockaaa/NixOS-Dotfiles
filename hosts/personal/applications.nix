@@ -35,6 +35,7 @@
     ../../applications/languages/java.nix
     ../../applications/languages/go.nix
     ../../applications/languages/python.nix
+    ../../applications/languages/c-cpp.nix
 
     # fonts
     ../../applications/fonts/nerd-fonts.nix
@@ -72,4 +73,5 @@
   golang.enable = true;
   java.enable = true;
   python.enable = true;
+  cpp.enable = true;
 }
