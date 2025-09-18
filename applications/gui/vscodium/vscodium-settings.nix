@@ -6,8 +6,13 @@
     catppuccin.catppuccin-vsc-icons
 
     golang.go
+
     redhat.java
     vscjava.vscode-java-pack
+
+    ms-vscode.cpptools-extension-pack
+
+    ms-vscode-remote.remote-containers
   ];
 
   programs.vscode.userSettings = {

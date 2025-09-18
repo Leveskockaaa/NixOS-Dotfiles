@@ -20,9 +20,10 @@
   };
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "hu";
-    variant = "";
+  services.xserver = {
+    enable = false;
+    xkb.layout = "hu";
+    xkb.variant = "";
   };
 
   # Configure console keymap

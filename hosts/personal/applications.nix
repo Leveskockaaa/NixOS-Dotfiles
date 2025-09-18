@@ -4,7 +4,6 @@
   imports = [
     # cli applications
     ../../applications/cli/btop/btop.nix
-    ../../applications/cli/docker/docker.nix
     ../../applications/cli/exa/exa.nix
     ../../applications/cli/fastfetch/fastfetch.nix
     ../../applications/cli/fish/fish.nix
@@ -43,7 +42,6 @@
 
   # States of cli packages
   btop.enable = true;
-  docker.enable = true;
   exa.enable = true;
   fastfetch.enable = true;
   fish.enable = true;

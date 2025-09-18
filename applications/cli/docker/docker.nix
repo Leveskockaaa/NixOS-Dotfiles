@@ -6,6 +6,6 @@
   };
 
   config = lib.mkIf config.docker.enable {
-    programs.docker.enable = true;
+    virtualisation.docker.enable = true;
   };
 }
