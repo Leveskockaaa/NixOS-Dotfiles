@@ -10,6 +10,7 @@
     ../../applications/cli/ghostty/ghostty.nix
     ../../applications/cli/git/git.nix
     ../../applications/cli/kitty/kitty.nix
+    ../../applications/cli/lazydocker/lazydocker.nix
     ../../applications/cli/nano/nano.nix
     ../../applications/cli/neovim/neovim.nix    
     ../../applications/cli/nodejs/nodejs.nix
@@ -49,6 +50,7 @@
   ghostty.enable = true;
   git.enable = true;
   kitty.enable = true;
+  lazydocker.enable = true;
   nano.enable = true;
   neovim.enable = true;
   nodejs.enable = true;
