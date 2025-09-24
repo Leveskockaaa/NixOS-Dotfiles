@@ -13,7 +13,7 @@
     enable = true;
 
     shellAliases = {
-      exa = "exa --long --header";
+      eza = "eza --long --header --all";
     };
   };
 }
