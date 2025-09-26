@@ -4,7 +4,7 @@
   imports = [
     # cli applications
     ../../applications/cli/btop/btop.nix
-    ../../applications/cli/exa/exa.nix
+    ../../applications/cli/eza/eza.nix
     ../../applications/cli/fastfetch/fastfetch.nix
     ../../applications/cli/fish/fish.nix
     ../../applications/cli/ghostty/ghostty.nix
@@ -44,7 +44,7 @@
 
   # States of cli packages
   btop.enable = true;
-  exa.enable = true;
+  eza.enable = true;
   fastfetch.enable = true;
   fish.enable = true;
   ghostty.enable = true;
